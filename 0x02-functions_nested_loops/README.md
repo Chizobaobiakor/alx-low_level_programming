@@ -1,1 +1,1 @@
-0x02-functions_nested_loops
+cd 0x02-functions_nested_loops
