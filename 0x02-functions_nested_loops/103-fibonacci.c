@@ -2,57 +2,53 @@
 
 
 /**
+ * main - finds and prints the sum of the even-valued terms
  *
- *  * main - finds and prints the sum of the even-valued terms
+ * followed by a new line
  *
- *   * followed by a new line
+ * Return: Always 0 (Success)
  *
- *    * Return: Always 0 (Success)
- *
- *     */
+ */
 
 int main(void)
-	
+
 {
 
-        int i;
+	int i;
 
-        unsigned long int j, k, next, sum;
-
-
-        j = 1;
-
-        k = 2;
-
-        sum = 0;
+	unsigned long int j, k, next, sum;
 
 
-        for (i = 1; i <= 33; ++i)
+	j = 1;
 
-        {
-	
-	                if (j < 4000000 && (j % 2) == 0)
-	
-	                {
-			
-			                        sum = sum + j;
-			
-			                }
-	
-	                next = j + k;
-	
-	                j = k;
-	
-	                k = next;
-	
-	        }
+	k = 2;
+
+	sum = 0;
 
 
-        printf("%lu\n", sum);
+	for (i = 1; i <= 33; ++i)
+
+	{
+
+		if (j < 4000000 && (j % 2) == 0)
+
+		{
+
+			sum = sum + j;
+
+		}
+
+		next = j + k;
+
+		j = k;
+
+		k = next;
+
+	}
 
 
-        return (0);
+	printf("%lu\n", sum);
 
-}
 
+	return (0);
 }
